@@ -506,8 +506,8 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 /* ===== Begin Portfolio===== */
 .portfolio_area{}
 .portfolio{}
-.portfoloi_top{}
-.portfoloi_content_area{}
+.portfolio_top{}
+.portfolio_content_area{}
 .portfolio_menu{
 	text-align: center;
 	overflow: hidden;
