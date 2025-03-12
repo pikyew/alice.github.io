@@ -3,31 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Alice Portfolio</title>
     <meta name="description" content="Portfolio">
-    <meta name="keywords" content="HTML5, Bootsrtrap, One Page, Responsive, Template, Portfolio" />
     <meta name="author" content="alice">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="inc/animations/css/animate.min.css">
-    <link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
-    <link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/animations/css/animate.min.css">
+    <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="resources/owl-carousel/css/owl.theme.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <!-- <link rel="stylesheet" href="css/skin/cool-gray.css"> -->
-    <link rel="stylesheet" href="css/skin/ice-blue.css">
-    <!-- <link rel="stylesheet" href="css/skin/summer-orange.css"> -->
-    <!-- <link rel="stylesheet" href="css/skin/fresh-lime.css"> -->
-    <!-- <link rel="stylesheet" href="css/skin/night-purple.css"> -->
+    <link rel="stylesheet" href="css/skin-pink.css">
 </head>
 
 <body data-spy="scroll" data-target="#main-navbar">
-    <div class="page-loader"></div>
+    <div class="page-loader">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
     <div class="body">
         <header id="header" class="header-main">
             <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -54,8 +52,7 @@
                 </div>
             </nav>
         </header>
-        <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5"
-            style="background-image: url(img/slider-bg.jpg);">
+        <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="caption text-center text-white" data-stellar-ratio="0.7">
                     <div id="owl-intro-text" class="owl-carousel">
@@ -63,84 +60,83 @@
                             <h1>Hi, I am Pik Yew</h1>
                             <p>Major in Advertising, Utar</p>
                             <div class="extra-space-l"></div>
-                            <a class="btn btn-blank"
-                                href="#social-section"
-                                target="_blank" role="button">Commission Me!</a>
+                            <a class="btn btn-blank" href="#social-section" target="_blank" role="button">Commission
+                                Me!</a>
                         </div>
                         <div class="item">
                             <h1>Welcome to my portfolio</h1>
                             <p>I am a freelance video editor</p>
                             <div class="extra-space-l"></div>
-                            <a class="btn btn-blank"
-                                href="#social-section"
-                                target="_blank" role="button">Commission Me!</a>
+                            <a class="btn btn-blank" href="#social-section" target="_blank" role="button">Commission
+                                Me!</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="extra-space-l"></div>
-        <div class="page-header-wrapper">
-            <div class="container">
-                <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
-                    <h4>My Skills</h4>
-                </div>
-            </div>
-        </div>
-        <div class="our-skills">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="skill-bar wow slideInLeft" data-wow-delay="0.2s">
-                            <div class="progress-lebel">
-                                <h6>Photoshop & Illustrator</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 40%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="skill-bar wow slideInRight" data-wow-delay="0.2s">
-                            <div class="progress-lebel">
-                                <h6>Premiere Pro</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 85%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="skill-bar wow slideInLeft" data-wow-delay="0.4s">
-                            <div class="progress-lebel">
-                                <h6>Capcut</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 95%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="skill-bar wow slideInRight" data-wow-delay="0.4s">
-                            <div class="progress-lebel">
-                                <h6>Canva</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100" style="width: 90%;">
-                                </div>
-                            </div>
-                        </div>
+        <section id="skills-section" class="page text-center">
+            <div class="extra-space-l"></div>
+            <div class="page-header-wrapper">
+                <div class="container">
+                    <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <h4>My Skills</h4>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="our-skills">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="skill-bar wow slideInLeft" data-wow-delay="0.2s">
+                                <div class="progress-lebel">
+                                    <h6>Photoshop & Illustrator</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 40%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-bar wow slideInRight" data-wow-delay="0.2s">
+                                <div class="progress-lebel">
+                                    <h6>Premiere Pro</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 85%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-bar wow slideInLeft" data-wow-delay="0.4s">
+                                <div class="progress-lebel">
+                                    <h6>Capcut</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 95%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-bar wow slideInRight" data-wow-delay="0.4s">
+                                <div class="progress-lebel">
+                                    <h6>Canva</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 90%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="services-section" class="page text-center">
             <div class="page-header-wrapper">
@@ -192,7 +188,8 @@
                             <div class="portfolio_content_area">
                                 <div class="portfolio_menu" id="filters">
                                     <ul>
-                                        <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">all</a></li>
+                                        <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">all</a>
+                                        </li>
                                         <li><a href="#porfolio_menu" data-filter=".shorts">shorts</a></li>
                                         <li><a href="#porfolio_menu" data-filter=".videos">assignment videos</a></li>
                                     </ul>
@@ -249,7 +246,6 @@
                 </div>
             </div>
         </section>
-        
         <section id="prices-section" class="page">
             <div class="page-header-wrapper">
                 <div class="container">
@@ -264,7 +260,6 @@
             <div class="prices">
                 <div class="container">
                     <div class="row">
-
                         <div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.3s">
                             <div class="panel panel-default">
                                 <div class="panel-heading text-center">
@@ -312,7 +307,7 @@
             </div>
             <div class="extra-space-l"></div>
         </section>
-        <section id="social-section">
+        <section id="social-section" class="page text-center">
             <div class="page-header-wrapper">
                 <div class="container">
                     <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
@@ -324,24 +319,26 @@
             </div>
             <div class="container">
                 <ul class="social-list">
-                    <li> <a href="https://wa.link/ka3hgk" target="_blank" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span
+                    <li> <a href="https://wa.link/ka3hgk" target="_blank"
+                            class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span
                                 class="rotate-box-icon"><i class="fa fa-whatsapp"></i></span></a></li>
-                    <li> <a href="mailto:wongpikyew@gmail.com" target="_blank" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span
+                    <li> <a href="mailto:wongpikyew@gmail.com" target="_blank"
+                            class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span
                                 class="rotate-box-icon"><i class="fa fa-envelope-o"></i></span></a></li>
                 </ul>
             </div>
         </section>
-        <script src="inc/jquery/jquery-1.11.1.min.js"></script>
-        <script src="inc/bootstrap/js/bootstrap.min.js"></script>
-        <script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
-        <script src="inc/stellar/js/jquery.stellar.min.js"></script>
-        <script src="inc/animations/js/wow.min.js"></script>
-        <script src="inc/waypoints.min.js"></script>
-        <script src="inc/isotope.pkgd.min.js"></script>
-        <script src="inc/classie.js"></script>
-        <script src="inc/jquery.easing.min.js"></script>
-        <script src="inc/jquery.counterup.min.js"></script>
-        <script src="inc/smoothscroll.js"></script>
+        <script src="resources/jquery/jquery-1.11.1.min.js"></script>
+        <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/owl-carousel/js/owl.carousel.min.js"></script>
+        <script src="resources/stellar/js/jquery.stellar.min.js"></script>
+        <script src="resources/animations/js/wow.min.js"></script>
+        <script src="resources/waypoints.min.js"></script>
+        <script src="resources/isotope.pkgd.min.js"></script>
+        <script src="resources/classie.js"></script>
+        <script src="resources/jquery.easing.min.js"></script>
+        <script src="resources/jquery.counterup.min.js"></script>
+        <script src="resources/smoothscroll.js"></script>
         <script src="js/theme.js"></script>
 </body>
 
