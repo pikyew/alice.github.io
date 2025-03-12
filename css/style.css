@@ -982,3 +982,10 @@ p.subtitle {
 	transform: rotate(-45deg);
 }
 /* ===== End buttons ===== */
+
+@media (min-width: 768px) { 
+	/* Apply margin-left to the WhatsApp icon only in desktop mode */
+	.rotate-box-icon  {
+			margin-left: 40px;
+	}
+}
