@@ -7,7 +7,11 @@ body {
 	color: #fb7faf;
 }
 
-section {
+section{
+	background: #ffe2e9d4;
+}
+
+#text-carousel-intro-section {
 	background: linear-gradient(to bottom, #ffe2e9 0%, #ffa8c8 100%);
 }
 
