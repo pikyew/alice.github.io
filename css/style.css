@@ -1158,3 +1158,11 @@ border:1px solid #ffa6c6;
   display: block;
   margin: 0 auto;
 }
+
+.container {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
