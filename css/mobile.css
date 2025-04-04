@@ -327,6 +327,21 @@
 		display: none !important;
 	}
 
+	#text-carousel-intro-section {
+		padding-top: 150px;
+	}
+
+	#text-carousel-intro-section .row {
+		flex-direction: column;
+	}
+
+	#text-carousel-intro-section .caption {
+		margin-bottom: 50px;
+	}
+
+	.profile-pic {
+		margin: 0 auto 30px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -346,6 +361,23 @@
 	.navbar-nav {
 		display: block;
 		text-align: center;
+	}
+
+	#text-carousel-intro-section {
+		padding-top: 150px;
+		/* Adjust based on your actual navbar height */
+	}
+
+	#text-carousel-intro-section .row {
+		flex-direction: column;
+	}
+
+	#text-carousel-intro-section .caption {
+		margin-bottom: 50px;
+	}
+
+	.profile-pic {
+		margin: 0 auto 30px;
 	}
 }
 
