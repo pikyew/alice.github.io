@@ -27,6 +27,11 @@
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
+    <div id="scroll-Top">
+        <div class="return-to-top">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+    </div>
     <div class="body">
         <header id="header" class="header-main">
             <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -47,7 +52,7 @@
                                 <li><a class="page-scroll" href="body">Home</a></li>
                                 <li><a class="page-scroll" href="#skills-section">Skills</a></li>
                                 <li><a class="page-scroll" href="#services-section">Services</a></li>
-                                <li><a class="page-scroll" href="#portfolio-section">Works</a></li>
+                                <li><a class="page-scroll" href="#portfolio-section">Projects</a></li>
                                 <li><a class="page-scroll" href="#prices-section">Prices</a></li>
                                 <li><a class="page-scroll" href="#social-section">Contact</a></li>
                             </ul>
@@ -189,7 +194,7 @@
                             <div class="page-header-wrapper">
                                 <div class="container">
                                     <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                                        <h2>My Works</h2>
+                                        <h2>My Projects</h2>
                                         <div class="divider">
                                             <p>✦•┈๑⋅⋯ ⋯⋅๑┈•✦</p>
                                         </div>
@@ -202,8 +207,8 @@
                                     <ul>
                                         <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">all</a>
                                         </li>
-                                        <li><a href="#porfolio_menu" data-filter=".shorts">shorts</a></li>
-                                        <li><a href="#porfolio_menu" data-filter=".videos">assignment videos</a></li>
+                                        <li><a href="#porfolio_menu" data-filter=".shorts">Shorts</a></li>
+                                        <li><a href="#porfolio_menu" data-filter=".videos">Assignment Videos</a></li>
                                         <li><a href="#porfolio_menu" data-filter=".poster">Poster</a></li>
                                     </ul>
                                 </div>
@@ -453,8 +458,6 @@
             </div>
     </div>
     </section>
-
-
     <script src="resources/jquery/jquery-1.11.1.min.js"></script>
     <script src="resources/bootstrap/js/bootstrap.min.js"></script>
     <script src="resources/owl-carousel/js/owl.carousel.min.js"></script>
@@ -467,6 +470,22 @@
     <script src="resources/jquery.counterup.min.js"></script>
     <script src="resources/smoothscroll.js"></script>
     <script src="js/theme.js"></script>
+    <script>
+        // Show/hide scroll button
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+                $('.return-to-top').fadeIn();
+            } else {
+                $('.return-to-top').fadeOut();
+            }
+        });
+
+        // Scroll to top smoothly
+        $('.return-to-top').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+    </script>
 </body>
 
 </html>
