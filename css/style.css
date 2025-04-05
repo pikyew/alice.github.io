@@ -56,11 +56,6 @@ h5 {
 p {
 	font: 14px/1.5em "Roboto";
 }
-
-.navbar-nav>li>a {
-	font-family: "Lato", Helvetica, Arial, sans-serif;
-}
-
 /* End Fonts */
 
 
@@ -197,7 +192,7 @@ section {
 /* Navbar inverse dropdown */
 .navbar-inverse .dropdown-menu {
 	padding: 10px 0;
-}
+} 
 
 /* Navbar fixed */
 .navbar-fixed-top .container {
@@ -301,12 +296,10 @@ section {
   
   /* Profile picture styling */
   .profile-pic {
-	max-width: 300px;
+	max-width: 350px;
 	width: 100%;
 	height: auto;
-	border-radius: 10px;
-	margin: 30px auto 0;  /* Centers the image horizontally and adds top margin */
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	margin: 30px auto 0;
   }
   
 
@@ -906,7 +899,7 @@ ul.imp-links li a {
 
 /* ===== Begin page header ===== */
 .page-header {
-	margin: 0 0 60px 0;
+	margin: 0 0 30px 0;
 	padding: 0;
 	border: none;
 }
@@ -1187,10 +1180,13 @@ p.subtitle {
 /*.contact-add-info */
 
 /*hm-foot-icon*/
-.hm-foot-icon {}
+.hm-foot-icon {
+
+}
 
 .hm-foot-icon ul li {
 	float: left;
+	margin-right: 30px;
 }
 
 .hm-foot-icon ul li>a {
@@ -1201,6 +1197,7 @@ p.subtitle {
 	-ms-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
+	/* font-size: 32px; */
 }
 
 .hm-foot-icon ul li>a:hover {
