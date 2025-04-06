@@ -22,30 +22,13 @@ $("body").scrollspy({
 });
 
 // Display loading image while page loads
-// Wait for window load
 $(window).load(function () {
   // Animate loader off screen
   $(".page-loader").fadeOut("slow");
 });
 
-// Stellar (parallax): https://github.com/markdalgleish/stellar.js
-
-$.stellar({
-  // Set scrolling to be in either one or both directions
-  horizontalScrolling: false,
-  verticalScrolling: true,
-});
-
 // WOW animation scroll: https://github.com/matthieua/WOW
-
 new WOW().init();
-
-// Counter-Up (requires jQuery waypoints.js plugin): https://github.com/bfintal/Counter-Up
-
-$(".counter").counterUp({
-  delay: 10,
-  time: 2000,
-});
 
 // Isotop Package
 $(window).load(function () {

@@ -138,77 +138,9 @@ a:focus {
 	background-color: transparent;
 }
 
-/* === Navbar (Inverse) === */
-.navbar-inverse {
-	background-color: #111;
-	color: #CCC;
-}
-
-.navbar-inverse .navbar-brand {
-	color: #CCC;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-	color: #CCC;
-}
-
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>.active>a:focus {
-	background-color: transparent;
-	color: #f06292;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus,
-.navbar-inverse .navbar-nav>li.active>a {
-	color: #f06292;
-}
-
-/* === Navbar Inverse Dropdown === */
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a:focus {
-	color: #f06292;
-}
-
-.navbar-inverse .dropdown-menu {
-	background-color: #1F1F1F;
-	border: 1px solid #111;
-	border-top: 2px solid #ad1457;
-}
-
-.navbar-inverse .dropdown-menu>li>a {
-	color: #CCC;
-}
-
-.navbar-inverse .dropdown-menu>li>a:hover,
-.navbar-inverse .dropdown-menu>li>a:focus {
-	color: #f06292;
-}
-
-/* === Navbar Fixed Inverse === */
-.navbar-inverse.navbar-fixed-top.navbar-shrink {
-	background-color: #111;
-}
-
-.navbar-inverse.navbar-fixed-top.navbar-shrink .navbar-nav>li>a {
-	color: #CCC;
-}
-
-.navbar-inverse.navbar-fixed-top.navbar-shrink .navbar-nav>.active>a,
-.navbar-inverse.navbar-fixed-top.navbar-shrink .navbar-nav>.active>a:hover,
-.navbar-inverse.navbar-fixed-top.navbar-shrink .navbar-nav>.active>a:focus,
-.navbar-inverse.navbar-fixed-top.navbar-shrink .navbar-nav>li>a:hover,
-.navbar-inverse.navbar-fixed-top.navbar-shrink .navbar-nav>li>a:focus,
-.navbar-inverse.navbar-fixed-top.navbar-shrink .navbar-nav>li.active>a {
-	background-color: transparent;
-	color: #f06292;
-}
-
 .navbar-fixed-top.navbar-shrink .navbar-brand,
 .navbar-fixed-top.navbar-shrink .navbar-brand:focus,
-body.boxed .body .navbar-inverse.navbar-transparent.navbar-shrink .navbar-brand {
+body.boxed .body .navbar-transparent.navbar-shrink .navbar-brand {
 	color: #CCC;
 }
 
