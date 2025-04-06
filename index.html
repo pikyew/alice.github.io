@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/animations/css/animate.min.css">
     <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="resources/owl-carousel/css/owl.carousel.css">
-    <link rel="stylesheet" href="resources/owl-carousel/css/owl.theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/skin-pink.css">
@@ -65,21 +63,34 @@
                 <div class="row" data-stellar-ratio="0.7" style="display: flex; align-items: center;">
                     <div class="col-md-8 col-xs-12">
                         <div class="caption  text-white text-center">
-                            <div id="owl-intro-text" class="owl-carousel">
-                                <div class="item">
-                                    <h1>Hi, I am Pik Yew</h1>
-                                    <p>Major in Advertising, Utar</p>
-                                    <div class="extra-space-l"></div>
-                                    <a class="btn-lg btn btn-blank" href="#social-section" target="_blank"
-                                        role="button">Contact Me!</a>
+                            <div id="bootstrap-intro-carousel" class="carousel slide text-white text-center"
+                                data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <h1>Hi, I am Pik Yew</h1>
+                                        <p>Major in Advertising, Utar</p>
+                                        <div class="extra-space-l"></div>
+                                        <a class="btn-lg btn btn-blank" href="#social-section" target="_blank"
+                                            role="button">Contact Me!</a>
+                                    </div>
+                                    <div class="item">
+                                        <h1>My portfolio</h1>
+                                        <p>I am a freelance video editor</p>
+                                        <div class="extra-space-l"></div>
+                                        <a class="btn-lg btn btn-blank" href="#social-section" target="_blank"
+                                            role="button">Contact Me!</a>
+                                    </div>
                                 </div>
-                                <div class="item">
-                                    <h1>Welcome to my portfolio</h1>
-                                    <p>I am a freelance video editor</p>
-                                    <div class="extra-space-l"></div>
-                                    <a class="btn-lg btn btn-blank" href="#social-section" target="_blank"
-                                        role="button">Contact Me!</a>
-                                </div>
+                                <a class="left carousel-control" href="#bootstrap-intro-carousel" role="button"
+                                    data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#bootstrap-intro-carousel" role="button"
+                                    data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -487,7 +498,8 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="https://www.linkedin.com/in/wong-pik-yew-b32889359/" target="_blank">
+                                                <a href="https://www.linkedin.com/in/wong-pik-yew-b32889359/"
+                                                    target="_blank">
                                                     <i class="fa fa-linkedin fa-2x"></i>
                                                 </a>
                                             </li>
@@ -503,7 +515,6 @@
     </section>
     <script src="resources/jquery/jquery-1.11.1.min.js"></script>
     <script src="resources/bootstrap/js/bootstrap.min.js"></script>
-    <script src="resources/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="resources/stellar/js/jquery.stellar.min.js"></script>
     <script src="resources/animations/js/wow.min.js"></script>
     <script src="resources/waypoints.min.js"></script>
@@ -514,7 +525,6 @@
     <script src="resources/smoothscroll.js"></script>
     <script src="js/theme.js"></script>
     <script>
-        // Show/hide scroll button
         $(window).scroll(function () {
             if ($(this).scrollTop() > 200) {
                 $('.return-to-top').fadeIn();
