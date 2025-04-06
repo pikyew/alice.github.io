@@ -1,87 +1,58 @@
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-
-$(".page-scroll").bind("click", function (event) {
-  var $anchor = $(this);
-  $("html, body")
-    .stop()
-    .animate(
-      {
-        scrollTop: $($anchor.attr("href")).offset().top - 64,
-      },
-      1500,
-      "easeInOutExpo"
-    );
-  event.preventDefault();
+// Page Scroll (smooth scroll to sections)
+$(".page-scroll").click(function (e) {
+  e.preventDefault();
+  const target = $(this).attr("href");
+  $("html, body").animate({
+    scrollTop: $(target).offset().top - 64
+  }, 1000, "swing");
 });
 
-// Highlight the top nav as scrolling occurs
-
+// ScrollSpy (highlight nav while scrolling)
 $("body").scrollspy({
   target: ".navbar",
-  offset: 65,
+  offset: 65
 });
 
-// Display loading image while page loads
-$(window).load(function () {
-  // Animate loader off screen
+// Page Loader (fade out when loaded)
+$(window).on("load", function () {
   $(".page-loader").fadeOut("slow");
 });
 
-// WOW animation scroll: https://github.com/matthieua/WOW
+// WOW.js (trigger scroll animations)
 new WOW().init();
 
-// Isotop Package
-$(window).load(function () {
+// Portfolio Filter with Isotope
+$(window).on("load", function () {
+  const $portfolio = $("#portfolio");
+
   $(".portfolio_menu ul li").click(function () {
     $(".portfolio_menu ul li").removeClass("active_prot_menu");
     $(this).addClass("active_prot_menu");
   });
 
-  var $container = $("#portfolio");
-  $container.isotope({
+  $portfolio.isotope({
     itemSelector: ".col-sm-4",
-    layoutMode: "fitRows",
+    layoutMode: "fitRows"
   });
-  $("#filters").on("click", "a", function () {
-    var filterValue = $(this).attr("data-filter");
-    $container.isotope({ filter: filterValue });
-    return false;
+
+  $("#filters a").click(function (e) {
+    e.preventDefault();
+    const filter = $(this).data("filter");
+    $portfolio.isotope({ filter: filter });
   });
 });
 
-// Check to see if the window is top if not then display button
+// Scroll to Top Button (show/hide + click scroll)
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 100) {
-    $(".scrolltotop").fadeIn();
-  } else {
-    $(".scrolltotop").fadeOut();
-  }
+  const isVisible = $(this).scrollTop() > 200;
+  $(".return-to-top, .scrolltotop").toggle(isVisible);
 });
 
-// Click event to scroll to top
-$(".scrolltotop").click(function () {
-  $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
-  return false;
+$(".return-to-top, .scrolltotop").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 1000, "swing");
 });
 
-// Scroll-to-top button show/hide logic
-$(window).on("scroll", function () {
-  if ($(this).scrollTop() > 200) {
-    $(".return-to-top, .scrolltotop").fadeIn();
-  } else {
-    $(".return-to-top, .scrolltotop").fadeOut();
-  }
-});
-
-// Smooth scroll to top
-$(".return-to-top, .scrolltotop").on("click", function () {
-  $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
-  return false;
-});
-
-// Close mobile menu when click menu link (Bootstrap default menu)
-$(document).on("click", ".navbar-collapse.in", function (e) {
-  if ($(e.target).is("a") && $(e.target).attr("class") != "dropdown-toggle") {
-    $(this).collapse("hide");
-  }
+// Close Mobile Menu on Link Click
+$(".navbar-collapse").on("click", "a:not(.dropdown-toggle)", function () {
+  $(".navbar-collapse").collapse("hide");
 });
